@@ -80,7 +80,7 @@ function DrawerAppBar(props) {
             component="div"
             sx={{ textAlign: "left", flexGrow: 1, display: { xs: "none", sm: "block" } }}
           >
-            <span style={{color:'#fce057' }}>const </span>
+            <span style={{color:'#fce057' }}>let </span>
             <span style={{color:'#fd87e0' }}>webDev</span>
             <span style={{color:'#bebebf' }}> = </span>
             <span style={{color:'#f58f34' }}> "Jessie Zollinger"</span>
