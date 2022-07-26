@@ -1,3 +1,6 @@
+body {
+  background-color: #34314a;
+}
 .App {
   text-align: center;
 }
@@ -35,4 +38,16 @@
   to {
     transform: rotate(360deg);
   }
+}
+.homeContainer {
+  width: 80%;
+  margin-top: 75px;
+  color:#bebebf;
+}
+.homeImage {
+  height: 350px;
+  border-radius: 10px;
+  border:#282c34;
+  border-style: inset;
+  overflow: hidden;
 }

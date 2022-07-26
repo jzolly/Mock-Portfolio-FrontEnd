@@ -30,15 +30,22 @@ function DrawerAppBar(props) {
       textAlign: "center",
       
       }}>
-      <Typography variant="h6" sx={{ my: 2 }}>
-        JZ
-      </Typography>
+      <Typography
+            variant="h6"
+            component="div"
+            sx={{ textAlign: "center", flexGrow: 1, display: { xs: "none", sm: "block" } }}
+          >
+            <span style={{color:'#fce057' }}>const </span>
+            <span style={{color:'#fd87e0' }}>webDev</span>
+            <span style={{color:'#bebebf' }}> = </span>
+            <span style={{color:'#f58f34' }}> "Jessie Zollinger"</span>
+          </Typography>
       <Divider />
       <List>
         {Object.entries(navItems).map(([label, url]) => (
           <Link to={url}>
             <ListItem key={label} disablePadding>
-              <ListItemButton sx={{ textAlign: "center", color: 'white' }}>
+              <ListItemButton sx={{ textAlign: "center", color: '#f2f1f3' }}>
                 <ListItemText primary={label} />
               </ListItemButton>
             </ListItem>
@@ -56,7 +63,7 @@ function DrawerAppBar(props) {
       display: "flex"
       }}>
       <AppBar component="nav" sx={{
-        background: "black"
+        background: "#252335"
       }}>
         <Toolbar>
           <IconButton
@@ -71,14 +78,17 @@ function DrawerAppBar(props) {
           <Typography
             variant="h6"
             component="div"
-            sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}
+            sx={{ textAlign: "left", flexGrow: 1, display: { xs: "none", sm: "block" } }}
           >
-            Jessie Zollinger
+            <span style={{color:'#fce057' }}>const </span>
+            <span style={{color:'#fd87e0' }}>webDev</span>
+            <span style={{color:'#bebebf' }}> = </span>
+            <span style={{color:'#f58f34' }}> "Jessie Zollinger"</span>
           </Typography>
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
             {Object.entries(navItems).map(([label, url]) => (
               <Link to={url}>
-                <Button key={label} sx={{ color: "#fff" }}>
+                <Button key={label} sx={{ color: "#bebebf" }}>
                   {label}
                 </Button>
               </Link>
@@ -100,8 +110,8 @@ function DrawerAppBar(props) {
             "& .MuiDrawer-paper": {
               boxSizing: "border-box",
               width: drawerWidth,
-              background: "grey",
-              color: 'white'
+              background: "#2a283d",
+              color: '#bebebf'
             },
           }}
         >
