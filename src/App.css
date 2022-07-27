@@ -40,8 +40,8 @@ body {
   }
 }
 .homeContainer {
-  width: 80%;
-  margin-top: 75px;
+  max-width: 1000px;
+  margin: 75px auto 0;
   color:#bebebf;
 }
 .homeImage {
@@ -50,4 +50,27 @@ body {
   border:#282c34;
   border-style: inset;
   overflow: hidden;
+}
+.projectContainer {
+  max-width: 1000px;
+  margin: 75px auto 0;
+  color:#bebebf;
+}
+.projectImage {
+  width: 230px;
+  height: 230px;
+}
+.projectBox {
+
+}
+.aboutContainer {
+  max-width: 1000px;
+  margin: 75px auto 0;
+  color:#bebebf;
+}
+.professionalInfo {
+
+}
+.bio {
+  
 }

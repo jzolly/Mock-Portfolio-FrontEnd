@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Grid } from "@mui/material";
+import { Grid, ButtonGroup, Button, Box } from "@mui/material";
 
 function Projects(props) {
   // create state to hold projects
@@ -23,11 +23,11 @@ function Projects(props) {
   // define a function that will return the JSX needed once we get the data
   const loaded = () => {
     return (
-      <Grid container>
+      <Grid container className="projectContainer">
         {projects.map((project) => (
-          <Grid item xs={12} md={6}>
+          <Grid item xs={8} md={4} sx={{ }} className="projectBox">
             <h1>{project.name}</h1>
-            <img src={project.image} alt="Project Display" width="100%" />
+            <img className="projectImage" src={project.image} alt="Project Display" width="100%" />
             <a href={project.git}>
               <button>Github</button>
             </a>

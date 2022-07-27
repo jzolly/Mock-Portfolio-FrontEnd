@@ -30,16 +30,6 @@ function DrawerAppBar(props) {
       textAlign: "center",
       
       }}>
-      <Typography
-            variant="h6"
-            component="div"
-            sx={{ textAlign: "center", flexGrow: 1, display: { xs: "none", sm: "block" } }}
-          >
-            <span style={{color:'#fce057' }}>const </span>
-            <span style={{color:'#fd87e0' }}>webDev</span>
-            <span style={{color:'#bebebf' }}> = </span>
-            <span style={{color:'#f58f34' }}> "Jessie Zollinger"</span>
-          </Typography>
       <Divider />
       <List>
         {Object.entries(navItems).map(([label, url]) => (
@@ -78,12 +68,12 @@ function DrawerAppBar(props) {
           <Typography
             variant="h6"
             component="div"
-            sx={{ textAlign: "left", flexGrow: 1, display: { xs: "none", sm: "block" } }}
+            sx={{ textAlign: "left", flexGrow: 1 }}
           >
             <span style={{color:'#fce057' }}>let </span>
-            <span style={{color:'#fd87e0' }}>webDev</span>
+            <span style={{color:'#fd87e0' }}>jessieZollinger</span>
             <span style={{color:'#bebebf' }}> = </span>
-            <span style={{color:'#f58f34' }}> "Jessie Zollinger"</span>
+            <span style={{color:'#f58f34' }}> "Software Engineer"</span>
           </Typography>
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
             {Object.entries(navItems).map(([label, url]) => (
