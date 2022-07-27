@@ -67,10 +67,21 @@ body {
   max-width: 1000px;
   margin: 75px auto 0;
   color:#bebebf;
+  display: flex;  
 }
-.professionalInfo {
-
+.right {
+  display: block;
 }
 .bio {
+  max-width: 550px;
+  margin: 8px auto 0;
+  height: 550px;
+  overflow: scroll;
   
+}
+.aboutHeader {
+  text-align: center;
+}
+.skillIcon {
+  height: 32px;
 }
